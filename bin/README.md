@@ -16,6 +16,15 @@ conda install -c edeno spectral_connectivity --yes
 pip install spikeinterface[full]==0.97.1
 # Installing sorters
 pip install mountainsort4==1.0.3
+```
+
+## Phy Environment
+
+```
+conda deactivate
+conda create -p ./phy_env python=3.9 --yes
+conda activate ./phy_env 
+
 # Installing phy
-pip install phy==2.0b1 --pre --upgrade
+pip install phy --pre --upgrade
 ```
