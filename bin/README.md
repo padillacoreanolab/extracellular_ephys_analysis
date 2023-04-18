@@ -4,8 +4,8 @@
 
 ```
 conda deactivate
-conda create -p ./pip_spike_interface_env python=3.9 --yes
-conda activate ./pip_spike_interface_env 
+conda create -p ./spike_interface_env python=3.9 --yes
+conda activate ./spike_interface_env 
 
 # Installing Jupyter Notebook
 conda install -c conda-forge notebook --yes
@@ -27,4 +27,30 @@ conda activate ./phy_env
 
 # Installing phy
 pip install phy --pre --upgrade
+```
+
+## Spike Interface Environment with Pip from Conda
+```
+# https://github.com/SpikeInterface/spikeinterface 
+conda create -p ./spike_interface python=3.9 --yes
+conda activate ./spike_interface
+./spike_interface/bin/pip install spikeinterface[full,widgets]
+./spike_interface/bin/pip install mountainsort4==1.0.3
+
+# Installing Spectral Connectivty
+conda install -c edeno spectral_connectivity --yes
+
+# Installing Jupyter Notebook
+conda install -c conda-forge notebook --yes
+
+# Installing Git Library to get root directory of repo
+conda install -c conda-forge gitpython
+# To use GPU for spectral connectivity
+conda install -c conda-forge cupy
+# To label inlines
+/nancy/projects/extracellular_ephys_analysis/bin/s
+pike_interface
+
+./spike_interface/bin/pip install matplotlib-label-lines
+
 ```
