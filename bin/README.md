@@ -46,11 +46,18 @@ conda install -c conda-forge notebook --yes
 # Installing Git Library to get root directory of repo
 conda install -c conda-forge gitpython
 # To use GPU for spectral connectivity
-conda install -c conda-forge cupy
+# conda install -c conda-forge cupy
+conda install -c conda-forge cupy cudatoolkit=11.0
+
 # To label inlines
 /nancy/projects/extracellular_ephys_analysis/bin/s
 pike_interface
 
 ./spike_interface/bin/pip install matplotlib-label-lines
+
+# To look at videos
+conda install -c conda-forge opencv
+
+conda install -c conda-forge seaborn
 
 ```
