@@ -60,4 +60,6 @@ conda install -c conda-forge opencv
 
 conda install -c conda-forge seaborn
 
+conda install nitime
+
 ```
